@@ -1,0 +1,148 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ 
+}
+body{
+    background-color: black;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header>a{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+    
+}
+
+header>button{
+cursor: pointer;
+height: 42px;
+width: fit-content;
+border: none;
+background-color: rgba(207, 31, 31, 0.531);
+color: white;
+padding: 10px;
+font-size: 22px;
+border-radius: 10px;
+}
+
+header>input{
+background-color: rgba(186, 172, 172, 0.097);    
+border-radius: 20px;
+height: 35px;
+width: 400px;
+text-align: center;
+border: 1px solid white;
+}
+
+#main{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+
+
+
+#left{
+    width: 25%;
+    height: 550;
+    background-color: black;
+    overflow: scroll;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+ #right{
+    width: 73%;
+    height: 550;
+    background-color: black;
+    overflow: scroll;
+ }
+
+ #list1,#list2,#list3{
+    margin-top: 50px;
+    align-items:center;
+    justify-content: space-evenly;
+    display: flex;
+    border-radius: 20px;
+    
+ }
+
+   #song{
+    height: 210px;
+    width: 190                          px;
+    position: relative;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 5px;
+ }
+  #song>img{
+    width: 150px;
+    height: 160px;
+    border-radius: 20px;
+}
+
+  #song>p{
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(132, 220, 227);
+}
+#song>button{
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 65px;
+    left: 65px;
+    background-color: transparent;
+   border: none;
+}
+#player>button{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    
+}
+
+#song:hover>button{
+    display: flex;
+}
+
+
+#player{
+    font-size: 26px;
+    font-weight: 700;
+    color: rgb(132, 220, 227);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    background-color: rgb(65, 56, 56)
+}
+h1{
+     background: linear-gradient(to bottom right, red,rgb(52, 52, 233));
+    color: transparent;
+    background-clip: text;
+}
+
