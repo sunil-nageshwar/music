@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <title>Music-World</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="logo.png" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <img src="logo.png" width="170">
+            <input type="text" placeholder="search your song">
+            <a href="">Premium</a>
+            <a href="">Contact</a>
+            <a href="">Services</a>
+            <button>Login</button>
+        </header>
+        <hr>
+        <br>
+        <div id="main">
+            <div id="left">
+               <div style="display: flex; column-gap: 60px;">
+                <h1>your liabrary</h1>
+                <p>+</p>
+                </div>
+
+             <div>
+                <h2>Create your playlist</h2>
+                <p>it's easy We'll help you</p>
+                <button style="height: 35px;width: fit-content;
+                 border-radius: 20px;padding: 10px; font-size: 15px; cursor: pointer;">Create playlist</button>
+             </div>
+
+             <div>
+                 <h2>Create your playlist</h2>
+                <p>it's easy We'll help you</p>
+                <button style="height: 35px;width: fit-content;
+                 border-radius: 20px;padding: 10px; font-size: 15px; cursor: pointer;">Create playlist</button>
+             </div>
+            </div>
+
+            <div id="right">
+                <center>
+                <h1>Workout-Songs</h1>
+                </center>
+                <div id="list1">
+                      
+                    <div id="song">
+                    <img src="song1.jpeg" width="180">
+                    <p>Get Ready To Fight </p>
+                    <p> Sachin-Jigar</p>
+                    <audio src="song1.mp3" class="song1"></audio>
+                    <button onclick="playMusic('song1', 'Get Ready To Fight')">
+                    <img src="play-button.png" width="40" class="song1" >
+                    </button>
+                    </div>
+
+                    <div id="song">
+                    <img src="song2.jpg" width="180">
+                    <p>kar har maidan fateh </p>
+                    <p> Vikram Montrose</p>
+                    <audio src="song2.mp3" class="song2"></audio>
+                    <button onclick="playMusic('song2', 'kar har maidan fateh')">
+                    <img src="play-button.png" width="40" class="song2" >
+                    </button>
+                    </div>
+
+                    <div id="song">
+                    <img src="song3.jpg" width="180">
+                    <p>toofan </p>
+                    <p> A.R. Rahman</p>
+                    <audio src="song3.mp3" class="song3"></audio>
+                    <button onclick="playMusic('song3', 'toofan')">
+                    <img src="play-button.png" width="40" class="song3" >
+                    </button>
+                    </div>
+
+                    <div id="song">
+                    <img src="song4.jpeg" width="180">
+                    <p>millionair </p>
+                    <p>Yo Yo Honey Singh</p>
+                    <audio src="song4.mp3" class="song4"></audio>
+                    <button onclick="playMusic('song4', 'millionair')">
+                    <img src="play-button.png" width="40" class="song4" >
+                    </button>
+                    </div>
+
+                    <div id="song">
+                    <img src="song5.jpg" width="180">
+                    <p>zinda </p>
+                    <p>Shankar-Ehsaan-Loy</p>
+                    <audio src="song5.mp3" class="song5"></audio>
+                    <button onclick="playMusic('song5', 'zinda')">
+                    <img src="play-button.png" width="40" class="song5" >
+                    </button>
+                    </div>
+
+                </div>
+
+                 <div id="list2">
+
+                    <div id="song">
+                    <img src="song6.jpg" width="180">
+                    <p>dangal </p>
+                    <p>Daler Mehndi</p>
+                    <audio src="song6.mp3" class="song6"></audio>
+                    <button onclick="playMusic('song6', 'dangal')">
+                    <img src="play-button.png" width="40" class="song6" >
+                    </button>
+                    </div>
+
+                    <div id="song">
+                    <img src="song7.jpg" width="180">
+                    <p>sulthan </p>
+                    <p> Ravi Basrur</p>
+                     <audio src="song7.mp3" class="song7"></audio>
+                    <button onclick="playMusic('song7', 'sulthan')">
+                    <img src="play-button.png" width="40" class="song7" >
+                    </button>
+                    </div>
+
+                    <div id="song">
+                    <img src="song8.jpg" width="180">
+                    <p>Dj Waley Babu </p>
+                    <p> Badshah,Aastha Gill</p>
+                     <audio src="song8.mp3" class="song8"></audio>
+                    <button onclick="playMusic('song8', 'Dj Waley Babu')">
+                    <img src="play-button.png" width="40" class="song8" >
+                    </button>
+                    </div>
+
+                    <div id="song">
+                    <img src="song9.jpg" width="180">
+                    <p>kurchi Madathapetti </p>
+                    <p> Sahithi Chaganti</p>
+                    <audio src="song9.mp3" class="song9"></audio>
+                    <button onclick="playMusic('song9', 'kurchi Madathapetti')">
+                    <img src="play-button.png" width="40" class="song9" >
+                    </button>
+                    </div>
+
+                    <div id="song">
+                    <img src="song10.jpg" width="180">
+                    <p>Laal Pari  </p>
+                    <p> Yo Yo Honey Singh</p>
+                    <audio src="song10.mp3" class="song10"></audio>
+                    <button onclick="playMusic('song10', 'kurchi Madathapetti')">
+                    <img src="play-button.png" width="40" class="song10" >
+                    </button>
+                    </div>
+    <br>
+                </div>
+            </div>
+        </div>
+         <div id="player">
+            <p id="sname">Your song name appears here</p>
+            <button onclick="pauseMusic()"><img src="play-button.png" width="50" class="song1" id="player-btn"></button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
